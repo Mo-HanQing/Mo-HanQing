@@ -4,5 +4,3 @@
 
 ![Mo-HanQing's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Mo-HanQing&theme=xcode)
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=Mo-HanQing&left_color=green&right_color=red)
-
