@@ -1,9 +1,9 @@
 |<img align="" src="IMG_20230929_232611.jpg" width="100%"/>|
 | ------------- |
-|<img align="" src="https://github-readme-activity-graph.vercel.app/graph?username=Mo-HanQing&theme=xcode&bg_color=0d1117&hide_border=true" />|
+<!--|<img align="" src="https://github-readme-activity-graph.vercel.app/graph?username=Mo-HanQing&theme=xcode&bg_color=0d1117&hide_border=true" />|-->
 
-|<img align="" src="https://github-readme-stats.vercel.app/api?username=Mo-HanQing&theme=transparent&hide_title=true&hide_border=true" />|<img align="" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mo-HanQing&theme=transparent&hide_title=true&hide_border=true" /> |
-| ------------- | ------------- |
+<!--|<img align="" src="https://github-readme-stats.vercel.app/api?username=Mo-HanQing&theme=transparent&hide_title=true&hide_border=true" />|<img align="" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mo-HanQing&theme=transparent&hide_title=true&hide_border=true" /> |
+| ------------- | ------------- |-->
 
 <!--START_SECTION:waka-->
 
