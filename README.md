@@ -6,6 +6,15 @@
 | ------------- | ------------- |
 
 <!--START_SECTION:waka-->
+
+```rust
+From: 01 April 2025 - To: 01 April 2025
+
+Total Time: 0 secs
+
+No activity tracked
+```
+
 <!--END_SECTION:waka-->
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Mo-HanQing&label=Profile%20views&color=0e75b6&style=flat" /> </p>
