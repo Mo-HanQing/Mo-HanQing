@@ -1,7 +1,7 @@
 |<img align="" src="IMG_20230929_232611.jpg" width="100%"/>|
 | ------------- |
 
-![Contributions in 3D](/profile-3d-contrib/profile-night-rainbow.svg)
+<!--![Contributions in 3D](/profile-3d-contrib/profile-night-rainbow.svg)-->
 
 <!--|<img align="" src="https://github-readme-activity-graph.vercel.app/graph?username=Mo-HanQing&theme=xcode&bg_color=0d1117&hide_border=true" />|-->
 
