@@ -5,5 +5,8 @@
 |<img align="" src="https://github-readme-stats.vercel.app/api?username=Mo-HanQing&theme=transparent&hide_title=true&hide_border=true" />|<img align="" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mo-HanQing&theme=transparent&hide_title=true&hide_border=true" /> |
 | ------------- | ------------- |
 
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Mo-HanQing&label=Profile%20views&color=0e75b6&style=flat" /> </p>
 
