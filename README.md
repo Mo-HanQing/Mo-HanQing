@@ -1,5 +1,4 @@
-|<img align="" src="IMG_20230929_232611.jpg" width="100%"/>|
-| ------------- |
+<img align="" src="IMG_20230929_232611.jpg" width="100%"/>
 
 <!--![Contributions in 3D](/profile-3d-contrib/profile-night-rainbow.svg)-->
 
