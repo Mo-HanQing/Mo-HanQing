@@ -10,11 +10,11 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 01 April 2025 - To: 08 April 2025
+From: 02 April 2025 - To: 09 April 2025
 
 Total Time: 19 hrs 30 mins
 
-Java          11 hrs 16 mins  >>>>>>>>>>>>>>-----------   57.83 %
+Java          11 hrs 16 mins  >>>>>>>>>>>>>>-----------   57.82 %
 JavaScript    2 hrs 21 mins   >>>----------------------   12.05 %
 Vue.js        1 hr 44 mins    >>-----------------------   08.95 %
 SQL           15 mins         -------------------------   01.34 %
