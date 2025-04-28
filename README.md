@@ -10,16 +10,16 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 19 April 2025 - To: 26 April 2025
+From: 20 April 2025 - To: 27 April 2025
 
-Total Time: 7 hrs 31 mins
+Total Time: 5 hrs 56 mins
 
-TypeScript   4 hrs 52 mins   >>>>>>>>>>>>>>>>---------   64.39 %
-Java         1 hr 33 mins    >>>>>--------------------   20.47 %
-CSS          29 mins         >>-----------------------   06.56 %
-Markdown     8 mins          -------------------------   01.89 %
-XML          5 mins          -------------------------   01.27 %
-Other        3 mins          -------------------------   00.80 %
+TypeScript   4 hrs 41 mins   >>>>>>>>>>>>>>>>>>>>-----   78.32 %
+CSS          27 mins         >>-----------------------   07.63 %
+Java         21 mins         >------------------------   05.93 %
+Markdown     8 mins          >------------------------   02.24 %
+XML          5 mins          -------------------------   01.61 %
+Other        3 mins          -------------------------   01.01 %
 ```
 
 <!--END_SECTION:waka-->
