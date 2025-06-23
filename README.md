@@ -10,14 +10,15 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 14 June 2025 - To: 21 June 2025
+From: 15 June 2025 - To: 22 June 2025
 
-Total Time: 4 hrs 21 mins
+Total Time: 5 hrs 19 mins
 
-JavaScript   4 hrs 21 mins   >>>>>>>>>>>>>>>>>>>>>>>>>   99.98 %
-Java         0 secs          -------------------------   00.01 %
-XML          0 secs          -------------------------   00.01 %
-TypeScript   0 secs          -------------------------   00.01 %
+JavaScript   4 hrs 34 mins   >>>>>>>>>>>>>>>>>>>>>----   85.79 %
+Java         41 mins         >>>----------------------   12.90 %
+Text         3 mins          -------------------------   00.95 %
+XML          1 min           -------------------------   00.35 %
+TypeScript   0 secs          -------------------------   00.00 %
 ```
 
 <!--END_SECTION:waka-->
