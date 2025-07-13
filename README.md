@@ -10,19 +10,18 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 04 July 2025 - To: 11 July 2025
+From: 05 July 2025 - To: 12 July 2025
 
-Total Time: 8 hrs 24 mins
+Total Time: 12 hrs 10 mins
 
-TypeScript       4 hrs 42 mins   >>>>>>>>>>>>>>-----------   55.98 %
-CSS              2 hrs 29 mins   >>>>>>>------------------   29.68 %
-Vue.js           24 mins         >------------------------   04.85 %
-Java             9 mins          -------------------------   01.94 %
-Markdown         9 mins          -------------------------   01.85 %
-GitIgnore file   3 mins          -------------------------   00.67 %
-XML              2 mins          -------------------------   00.43 %
-JavaScript       0 secs          -------------------------   00.18 %
-Other            0 secs          -------------------------   00.13 %
+TypeScript            4 hrs 42 mins   >>>>>>>>>>---------------   38.69 %
+Java                  3 hrs 18 mins   >>>>>>>------------------   27.20 %
+CSS                   2 hrs 29 mins   >>>>>--------------------   20.51 %
+Vue.js                24 mins         >------------------------   03.35 %
+GitIgnore file        9 mins          -------------------------   01.33 %
+XML                   3 mins          -------------------------   00.43 %
+Markdown              1 min           -------------------------   00.26 %
+HTTP Request          1 min           -------------------------   00.25 %
 ```
 
 <!--END_SECTION:waka-->
