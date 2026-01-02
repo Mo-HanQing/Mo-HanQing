@@ -10,18 +10,18 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 24 December 2025 - To: 31 December 2025
+From: 26 December 2025 - To: 02 January 2026
 
-Total Time: 25 hrs 33 mins
+Total Time: 19 hrs 9 mins
 
-Java              19 hrs 53 mins  >>>>>>>>>>>>>>>>>>>------   77.83 %
-XML               2 hrs 37 mins   >>>----------------------   10.29 %
-SQL               54 mins         >------------------------   03.56 %
-TypeScript        12 mins         -------------------------   00.80 %
-Text              10 mins         -------------------------   00.70 %
-Vue.js            2 mins          -------------------------   00.14 %
-GitIgnore file    1 min           -------------------------   00.07 %
-Properties        0 secs          -------------------------   00.06 %
+Java              12 hrs 44 mins  >>>>>>>>>>>>>>>>>--------   66.54 %
+XML               2 hrs 55 mins   >>>>---------------------   15.26 %
+SQL               51 mins         >------------------------   04.49 %
+Kotlin            31 mins         >------------------------   02.72 %
+TypeScript        15 mins         -------------------------   01.33 %
+Text              10 mins         -------------------------   00.94 %
+Image (svg)       10 mins         -------------------------   00.89 %
+Markdown          9 mins          -------------------------   00.78 %
 ```
 
 <!--END_SECTION:waka-->
