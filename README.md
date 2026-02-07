@@ -42,7 +42,7 @@ color=000000&style=flat" /
 ### ⏳ Weekly Activity
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats-bice-psi-72.vercel.app/api/wakatime?username=Mo-HanQing&layout=compact&hide_border=true&bg_color=00000000&text_color=A9A9A9&v=20260207" />
+  <img height="165" src="https://github-readme-stats-bice-psi-72.vercel.app/api/wakatime?username=MoHanQing&layout=compact&hide_border=true&bg_color=00000000&text_color=A9A9A9&v=20260207-v2" />
 </p>
 
 <!-- START_SECTION:waka -->
