@@ -11,15 +11,11 @@
 ### 📊 GitHub Stats
 
 <div align="center">
-  <table border="1" cellspacing="0" cellpadding="6" style="display: inline-block;">
+  <table border="1">
     <tr>
       <td>
         <img height="180" src="https://github-readme-stats-bice-psi-72.vercel.app/api?username=Mo-HanQing&show_icons=true&include_all_commits=true&count_private=true&hide_title=true&hide_rank=true&hide_border=true&bg_color=00000000&text_color=A9A9A9&icon_color=4078c0&v=20260207" />
       </td>
-    </tr>
-  </table>
-  <table border="1" cellspacing="0" cellpadding="6" style="display: inline-block;">
-    <tr>
       <td>
         <img height="180" src="https://github-readme-stats-bice-psi-72.vercel.app/api/top-langs/?username=Mo-HanQing&count_private=true&include_forks=true&layout=compact&hide_title=true&hide_border=true&bg_color=00000000&text_color=A9A9A9&v=20260207" />
       </td>
