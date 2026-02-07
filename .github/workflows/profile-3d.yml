@@ -20,6 +20,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           USERNAME: Mo-HanQing
 
+      - name: Post process SVG
+        run: |
+          # 自动处理：删除包含 contributions, other, 以及雷达图关键字的分组
+          # 使用 sed 删除匹配行所在的 <g> 分组或直接隐藏
+          sed -i '/contributions\|other\|Commit\|Issue\|PullReq\|Review\|Repo/d' profile-3d-contrib/*.svg
+          # 确保文件名一致，方便 README 引用
+          cp profile-3d-contrib/profile-night-rainbow.svg profile-3d-contrib/profile-night-rainbow-modify.svg
+
       - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"

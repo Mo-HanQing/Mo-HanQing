@@ -7677,13 +7677,13 @@
       <line x1="18.34" y1="25.24" x2="91.69" y2="126.21"
         style="stroke: #aaaaaa; stroke-dasharray: 4 4; stroke-width: 1px;"></line><text style="font-size: 20.8px;"
         text-anchor="middle" dominant-baseline="middle" x="114.62" y="147.66" fill="#eeeeff">PullReq<title>0</title>
-        </text>
+      </text>
     </g>
     <g class="axis">
       <line x1="-18.34" y1="25.24" x2="-91.69" y2="126.21"
         style="stroke: #aaaaaa; stroke-dasharray: 4 4; stroke-width: 1px;"></line><text style="font-size: 20.8px;"
         text-anchor="middle" dominant-baseline="middle" x="-114.62" y="147.66" fill="#eeeeff">Review<title>0</title>
-        </text>
+      </text>
     </g>
     <g class="axis">
       <line x1="-29.67" y1="-9.64" x2="-148.36" y2="-48.21"
@@ -7697,6 +7697,9 @@
         dur="3s" repeatCount="1"></animate>
     </polygon>
   </g>
-  <g transform="translate(40, 520)"></g><text style="font-size: 16px;" x="1260" y="20" dominant-baseline="hanging"
-    text-anchor="end" fill="#aaaaaa">2025-02-02 / 2026-02-07</text></g>
+
+  <g>
+    <text style="font-size: 16px;" x="1260" y="20" dominant-baseline="hanging" text-anchor="end"
+      fill="#aaaaaa">2025-02-02 / 2026-02-07</text>
+  </g>
 </svg>
