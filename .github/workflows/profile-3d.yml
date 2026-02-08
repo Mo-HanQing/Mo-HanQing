@@ -27,34 +27,45 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           USERNAME: Mo-HanQing
 
-      - name: Validate SVG outputs
+      - name: Post process SVG (Clean & Update Date)
         run: |
-          set -e
-          if [ ! -d profile-3d-contrib ]; then
-            echo "profile-3d-contrib directory not found" >&2
-            exit 1
-          fi
-          if ! ls -1 profile-3d-contrib/*.svg >/dev/null 2>&1; then
-            echo "No SVG files generated in profile-3d-contrib" >&2
-            exit 1
-          fi
-          bad=0
-          for f in profile-3d-contrib/*.svg; do
-            if [ ! -s "$f" ]; then
-              echo "Empty SVG: $f" >&2
-              bad=1
-            fi
-          done
-          if [ "$bad" -ne 0 ]; then
-            echo "One or more SVG files are empty. Stop without committing." >&2
-            exit 1
-          fi
+          python3 - <<EOF
+          import os
+          from datetime import datetime, timedelta
 
-      - name: Sync modify SVG
-        run: |
-          set -e
-          # 用你 README 引用的文件名指向一个稳定存在的生成结果
-          cp profile-3d-contrib/profile-night-view.svg profile-3d-contrib/profile-night-rainbow-modify.svg
+          file_path = 'profile-3d-contrib/profile-night-rainbow.svg'
+          output_path = 'profile-3d-contrib/profile-night-rainbow-modify.svg'
+
+          if not os.path.exists(file_path):
+              print(f"Error: {file_path} not found")
+              exit(1)
+
+          with open(file_path, 'r', encoding='utf-8') as f:
+              content = f.read()
+
+          # 1. 自动计算日期范围 (示例: 2025-02-02 / 2026-02-07)
+          end_date = datetime.now().strftime('%Y-%m-%d')
+          start_date = (datetime.now() - timedelta(days=365)).strftime('%Y-%m-%d')
+          date_text = f"{start_date} / {end_date}"
+
+          # 2. 隐藏底部统计栏 (查找包含 contributions 的文本块并隐藏其父容器或自身)
+          # 注意：yoshi389111 生成的结构中，底部信息通常在特定的 <g> 中
+          # 我们采用更稳妥的方式：直接在内容中寻找并替换
+          content = content.replace('contributions', 'contributions" display="none')
+          content = content.replace('other', 'other" display="none')
+          
+          # 3. 隐藏雷达图下方的文字（Commit, Issue等），如果你之前是想隐藏它们
+          for label in ['Commit', 'Issue', 'PullReq', 'Review', 'Repo']:
+              content = content.replace(f'>{label}<', f' display="none">{label}<')
+
+          # 4. 更新右上角日期
+          # 寻找格式类似 20xx-xx-xx / 20xx-xx-xx 的文本并替换
+          import re
+          content = re.sub(r'\d{4}-\d{2}-\d{2} / \d{4}-\d{2}-\d{2}', date_text, content)
+
+          with open(output_path, 'w', encoding='utf-8') as f:
+              f.write(content)
+          EOF
 
       - name: Commit & Push
         run: |
