@@ -27,11 +27,34 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           USERNAME: Mo-HanQing
 
-      - name: Post process SVG
+      - name: Validate SVG outputs
         run: |
-          # 不要用 sed 删除行（会破坏 SVG 结构导致 GitHub 无法渲染）
-          # 这里只做文件名同步：保持 README 引用的 modify 文件始终存在
-          cp profile-3d-contrib/profile-night-rainbow.svg profile-3d-contrib/profile-night-rainbow-modify.svg
+          set -e
+          if [ ! -d profile-3d-contrib ]; then
+            echo "profile-3d-contrib directory not found" >&2
+            exit 1
+          fi
+          if ! ls -1 profile-3d-contrib/*.svg >/dev/null 2>&1; then
+            echo "No SVG files generated in profile-3d-contrib" >&2
+            exit 1
+          fi
+          bad=0
+          for f in profile-3d-contrib/*.svg; do
+            if [ ! -s "$f" ]; then
+              echo "Empty SVG: $f" >&2
+              bad=1
+            fi
+          done
+          if [ "$bad" -ne 0 ]; then
+            echo "One or more SVG files are empty. Stop without committing." >&2
+            exit 1
+          fi
+
+      - name: Sync modify SVG
+        run: |
+          set -e
+          # 用你 README 引用的文件名指向一个稳定存在的生成结果
+          cp profile-3d-contrib/profile-night-view.svg profile-3d-contrib/profile-night-rainbow-modify.svg
 
       - name: Commit & Push
         run: |
