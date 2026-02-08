@@ -29,7 +29,8 @@ jobs:
 
       - name: Post process SVG
         run: |
-          sed -i '/contributions\|other\|Commit\|Issue\|PullReq\|Review\|Repo/d' profile-3d-contrib/*.svg
+          # 不要用 sed 删除行（会破坏 SVG 结构导致 GitHub 无法渲染）
+          # 这里只做文件名同步：保持 README 引用的 modify 文件始终存在
           cp profile-3d-contrib/profile-night-rainbow.svg profile-3d-contrib/profile-night-rainbow-modify.svg
 
       - name: Commit & Push
