@@ -8,11 +8,18 @@ on:
 permissions:
   contents: write
 
+# 防止多个任务同时运行导致冲突
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 获取完整历史以支持 rebase
 
       - name: Generate 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
@@ -22,10 +29,7 @@ jobs:
 
       - name: Post process SVG
         run: |
-          # 自动处理：删除包含 contributions, other, 以及雷达图关键字的分组
-          # 使用 sed 删除匹配行所在的 <g> 分组或直接隐藏
           sed -i '/contributions\|other\|Commit\|Issue\|PullReq\|Review\|Repo/d' profile-3d-contrib/*.svg
-          # 确保文件名一致，方便 README 引用
           cp profile-3d-contrib/profile-night-rainbow.svg profile-3d-contrib/profile-night-rainbow-modify.svg
 
       - name: Commit & Push
@@ -33,6 +37,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "chore: update 3d contribution graph"
+          # 先拉取最新改动
           git pull --rebase origin main
-          git push
+          # 检查是否有改动需要提交
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "chore: update 3d contribution graph"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
