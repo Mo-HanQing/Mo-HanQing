@@ -50,11 +50,6 @@ jobs:
             exit 1
           fi
 
-      - name: Sync modify SVG
-        run: |
-          set -e
-          # 用你 README 引用的文件名指向一个稳定存在的生成结果
-          cp profile-3d-contrib/profile-night-view.svg profile-3d-contrib/profile-night-rainbow-modify.svg
 
       - name: Commit & Push
         run: |

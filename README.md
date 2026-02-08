@@ -34,7 +34,7 @@
 ### 🧊 Contributions
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow-modify.svg" width="100%" />
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" />
 </p>
 
 
