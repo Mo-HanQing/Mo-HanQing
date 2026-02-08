@@ -51,6 +51,41 @@ jobs:
           fi
 
 
+      - name: Post process SVG
+        run: |
+          python3 - <<EOF
+          import os, re
+          
+          def clean_svg(file_path):
+              if not os.path.exists(file_path): return
+              with open(file_path, 'r', encoding='utf-8') as f:
+                  content = f.read()
+              
+              # 1. 移除包含 "other" 的图例组 (translate(40, 520) 附近的结构)
+              content = re.sub(r'<g transform="translate\(40, 520\)">.*?</g>\s*</g>', '', content, flags=re.DOTALL)
+              
+              # 2. 移除贡献数统计 (563 contributions 文本)
+              content = re.sub(r'<text[^>]*>[\d,]+</text>\s*<text[^>]*>contributions</text>', '', content, flags=re.DOTALL)
+              
+              # 3. 移除 Stars 统计 (图标 + 数字)
+              content = re.sub(r'<g transform="translate\(608, 802\), scale\(2\)">.*?</g>\s*<text[^>]*>\d+<title>\d+\s*</title></text>', '', content, flags=re.DOTALL)
+              
+              # 4. 移除 Forks 统计 (图标 + 数字)
+              content = re.sub(r'<g transform="translate\(736, 802\), scale\(2\)">.*?</g>\s*<text[^>]*>\d+<title>\d+\s*</title></text>', '', content, flags=re.DOTALL)
+              
+              # 5. 额外安全清理：移除任何残余的 contributions 文字
+              content = re.sub(r'<text[^>]*>[^<]*contributions[^<]*</text>', '', content, flags=re.IGNORECASE)
+              content = re.sub(r'<text[^>]*>[^<]*other[^<]*</text>', '', content, flags=re.IGNORECASE)
+
+              with open(file_path, 'w', encoding='utf-8') as f:
+                  f.write(content)
+
+          # 遍历所有生成的 SVG 进行清理
+          for filename in os.listdir('profile-3d-contrib'):
+              if filename.endswith('.svg'):
+                  clean_svg(os.path.join('profile-3d-contrib', filename))
+          EOF
+
       - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
