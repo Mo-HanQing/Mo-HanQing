@@ -14,10 +14,10 @@
   <table border="1">
     <tr>
       <td>
-        <img height="180" src="https://github-readme-stats-bice-psi-72.vercel.app/api?username=Mo-HanQing&show_icons=true&include_all_commits=true&count_private=true&hide_title=true&hide_rank=true&hide_border=true&bg_color=00000000&text_color=A9A9A9&icon_color=4078c0&v=20260207" />
+        <img height="180" src="https://github-readme-stats-bice-psi-72.vercel.app/api?username=Mo-HanQing&show_icons=true&include_all_commits=true&count_private=true&hide_title=true&hide_rank=true&hide_border=true&bg_color=00000000&text_color=A9A9A9&icon_color=4078c0&v=20260918" />
       </td>
       <td>
-        <img height="180" src="https://github-readme-stats-bice-psi-72.vercel.app/api/top-langs/?username=Mo-HanQing&count_private=true&include_forks=true&layout=compact&hide_title=true&hide_border=true&bg_color=00000000&text_color=A9A9A9&v=20260207" />
+        <img height="180" src="https://github-readme-stats-bice-psi-72.vercel.app/api/top-langs/?username=Mo-HanQing&count_private=true&include_forks=true&layout=compact&hide_title=true&hide_border=true&bg_color=00000000&text_color=A9A9A9&v=20260918" />
       </td>
     </tr>
   </table>
@@ -26,7 +26,7 @@
 ### ⏳ Activity
 
 <p align="center">
-  <img width="700" style="max-width: 100%;" src="https://github-readme-stats-bice-psi-72.vercel.app/api/wakatime?username=MoHanQing&layout=compact&hide_title=true&hide_border=true&bg_color=00000000&text_color=A9A9A9&v=20260207-v3" />
+  <img width="700" style="max-width: 100%;" src="https://github-readme-stats-bice-psi-72.vercel.app/api/wakatime?username=MoHanQing&layout=compact&hide_title=true&hide_border=true&bg_color=00000000&text_color=A9A9A9&hide=Other,Image%20%28svg%29,Kotlin,textmate,Bash,PowerShell,Java%20Properties,Docker,Properties,Java%20module,GitIgnore%20file,Text,Git%20Config,HTTP%20Request,SCSS,msycQUESTION,TSConfig,FTL,Batchfile&v=20260919" />
 </p>
 
 ---
